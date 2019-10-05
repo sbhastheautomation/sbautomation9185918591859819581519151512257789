@@ -1,15 +1,15 @@
 /* SETTINGS START */
-const prefix = "!"
-const groupID = 123123;
+const prefix = "sb!"
+const groupID = 927040;
 const bot_token = process.env.botToken;
 const rblxCookie = process.env.rblxCookie;
-const officerRoleE = "Officer";
-const welcomeMessage = "Welcome!";
-const maxXP = 10;
-const xpAuditLogChannelID = "123123";
-const mainChatChannelID = "123123";
+const officerRoleE = "---High Rank---";
+const welcomeMessage = "";
+const maxXP = 100;
+const xpAuditLogChannelID = "630069185170374687";
+const mainChatChannelID = "630069185170374687";
 const fireBaseURL = process.env.fireBaseURL;
-const xpName = "xp";
+const xpName = "Brigadium";
 /* SETTINGS END */
 
 /* PACKAGES START */
@@ -585,15 +585,15 @@ bot.on('message', async message => {
   if (message.content.toLowerCase().startsWith(`${config.prefix}code`) || message.content.toLowerCase().startsWith(`${config.prefix}link`) || message.content.toLowerCase().startsWith(`${config.prefix}tutorial`)){
     var embed = new Discord.RichEmbed()
       .setColor(0xff3636)
-      .setDescription(`**[Video Tutorial](https://github.com/nishi7409/ClanLabsV2-OpenSourced)**`)
+      .setDescription(`**hello**`)
     await message.channel.send(embed)
     var embed = new Discord.RichEmbed()
       .setColor(0x3072ff)
-      .setDescription(`**[Source Code](https://github.com/nishi7409/ClanLabsV2-OpenSourced)**`)
+      .setDescription(`**hello**`)
     await message.channel.send(embed)
     var embed = new Discord.RichEmbed()
       .setColor(0x1cff8e)
-      .setDescription(`This project was developed by [Nishant Srivastava](https://www.github.com/nishi7409).\n__The goal of the project was to provide users with a free service of which they can customize and add on to rather than going to a paid service.__`)
+      .setDescription(`hello`)
     return message.channel.send(embed)
   }
 
