@@ -9,7 +9,7 @@ const maxXP = 100;
 const xpAuditLogChannelID = "630069185170374687";
 const mainChatChannelID = "630069185170374687";
 const fireBaseURL = process.env.fireBaseURL;
-const xpName = "Lightning Points";
+const xpName = "xp";
 /* SETTINGS END */
 
 /* PACKAGES START */
