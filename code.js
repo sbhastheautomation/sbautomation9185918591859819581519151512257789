@@ -41,7 +41,7 @@ bot.on('ready', () => {
 bot.on('message', async message => {
 
   const args = message.content.split(/[ ]+/)
-  const verifiedRole = message.guild.roles.find(role => role.name === "Verified");
+  const verifiedRole = message.guild.roles.find(role => role.name === "Storm Brigade");
   const verificationCode = ['apple', 'rain', 'dog', 'cat', 'food','yum','pizza','raindrop','snow','birthday','cake','burger','soda','ice','no','yes','orange','pear','plum'];
   const promoLogs = bot.channels.get(`${xpAuditLogChannelID}`)
   const officerRole = message.guild.roles.find(role => role.name === `${officerRoleE}`);
