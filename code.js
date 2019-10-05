@@ -34,7 +34,7 @@ firebase.initializeApp(firebaseConfig)
 
 bot.on('ready', () => {
   console.log('Turned on Discord bot');
-  bot.user.setActivity(`${bot.users.size} comrades!`, { type: 'WATCHING' });
+  bot.user.setActivity(`Join Storm Brigade!`, { type: 'PLAYING' });
   bot.channels.get(bot.channels.get(`${mainChatChannelID}`).id).send(`I am now back online, thank you for waiting patiently.`)
 })
 
