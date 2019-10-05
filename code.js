@@ -9,7 +9,7 @@ const maxXP = 100;
 const xpAuditLogChannelID = "630069185170374687";
 const mainChatChannelID = "630069185170374687";
 const fireBaseURL = process.env.fireBaseURL;
-const xpName = "Brigadium";
+const xpName = "Lightning Points";
 /* SETTINGS END */
 
 /* PACKAGES START */
@@ -35,7 +35,7 @@ firebase.initializeApp(firebaseConfig)
 bot.on('ready', () => {
   console.log('Turned on Discord bot');
   bot.user.setActivity(`${bot.users.size} comrades!`, { type: 'WATCHING' });
-  bot.channels.get(bot.channels.get(`${mainChatChannelID}`).id).send(`**Resuming processes!** :wave:`)
+  bot.channels.get(bot.channels.get(`${mainChatChannelID}`).id).send(`I am now back online, thank you for waiting patiently.`)
 })
 
 bot.on('message', async message => {
