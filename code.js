@@ -106,7 +106,7 @@ bot.on('message', async message => {
     var nicknames2 = await rbx.getUsernameFromId(nicknames);
     var okayLetsTry = await rbx.getIdFromUsername(args[1]);
     var firstCheck = await rbx.getRankInGroup(groupID, okayLetsTry)
-    var RankID = await rbx.getRankInGroup(groupID, userID)
+    var RankID = await rbx.getRankInGroup(groupID, body.Id)
 
     if (blurb1 === token && RankID != 0 || blurb2 === token && RankID != 0){
       console.log('Verified.')
