@@ -106,8 +106,9 @@ bot.on('message', async message => {
     var nicknames2 = await rbx.getUsernameFromId(nicknames);
     var okayLetsTry = await rbx.getIdFromUsername(args[1]);
     var firstCheck = await rbx.getRankInGroup(groupID, okayLetsTry)
+    var RankID = await rbx.getRankInGroup(groupID, userID)
 
-    if (blurb1 === token || blurb2 === token){
+    if (blurb1 === token || blurb2 === token || RankID !== 0){
       await message.member.addRole(verifiedRole);
       await message.member.setNickname(`${firstCheck} | ${nicknames2}`);
       return message.author.send(`${welcomeMessage}`)
